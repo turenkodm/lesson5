@@ -15,22 +15,22 @@ class ItemElement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Hero(
-      tag: tag,
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 15),
-        margin: const EdgeInsets.all(5),
-        decoration: BoxDecoration(
-          color: const Color(0xFFe7e0ec),
-          borderRadius: BorderRadius.circular(15),
-        ),
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 15),
+      margin: const EdgeInsets.all(5),
+      decoration: BoxDecoration(
+        color: const Color(0xFFe7e0ec),
+        borderRadius: BorderRadius.circular(15),
+      ),
+      child: Hero(
+        tag: tag,
         child: Column(
           children: [
             SizedBox(
               height: 100,
               width: 250,
-              child: Image(
-                image: AssetImage(photo),
+              child: CircleAvatar(
+                backgroundImage: AssetImage(photo),
               ),
             ),
             const Divider(
