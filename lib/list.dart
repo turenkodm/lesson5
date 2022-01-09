@@ -1,17 +1,54 @@
 import 'package:lesson5/user.dart';
 
 List<User> list = [
-  User(name: 'Alex', phone: '12345678'),
-  User(name: 'Mike', phone: '23456789'),
-  User(name: 'Nina', phone: '00000000'),
-  User(name: 'Mona', phone: '11111111'),
-  User(name: 'Liza', phone: '22222222'),
-  User(name: 'Elena', phone: '33333333'),
-  User(name: 'Maria', phone: '44334543'),
-  User(name: 'Ivan', phone: '473829437'),
-  User(name: 'John', phone: '0023827'),
-  User(name: 'Bob', phone: '443232342'),
-  User(name: 'Boris', phone: '21341234123'),
-  User(name: 'Jake', phone: '232341234'),
-  User(name: 'Pol', phone: '442342342'),
+  User(
+      name: 'Alex',
+      phone: '+7 900 111 22 33',
+      photo: 'assets/images/Alex.jpeg',
+      tag: 'Alex'),
+  User(
+      name: 'Mike',
+      phone: '+7 904 111 33 22',
+      photo: 'assets/images/Mike.jpeg',
+      tag: 'Mike'),
+  User(
+      name: 'Nina',
+      phone: '+1 100 222 421 122',
+      photo: 'assets/images/Nina.jpeg',
+      tag: 'Nina'),
+  User(
+      name: 'Mona',
+      phone: '+20 121 33 2134',
+      photo: 'assets/images/Mona.jpeg',
+      tag: 'Mona'),
+  User(
+      name: 'Liza',
+      phone: '+1 555 352 332',
+      photo: 'assets/images/Liza.jpeg',
+      tag: 'Liza'),
+  User(
+      name: 'Elena',
+      phone: '8-911 877 22 33',
+      photo: 'assets/images/Elena.jpeg',
+      tag: 'Elena'),
+  User(
+      name: 'Maria',
+      phone: '8-122-233-77-54',
+      photo: 'assets/images/Maria.jpeg',
+      tag: 'Maria'),
+  User(
+      name: 'Ivan',
+      phone: '+99 1231 85 54',
+      photo: 'assets/images/Ivan.jpeg',
+      tag: 'Ivan'),
+  User(
+      name: 'John',
+      phone: '+3 743 4355 43',
+      photo: 'assets/images/John.jpeg',
+      tag: 'John'),
+  User(
+      name: 'Bob',
+      phone: '+6 8734 87459',
+      photo: 'assets/images/Bob.jpeg',
+      tag: 'Bob'),
 ];
