@@ -11,7 +11,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _sel = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,10 +21,8 @@ class _MyHomePageState extends State<MyHomePage> {
         itemCount: list.length,
         itemBuilder: (BuildContext context, int element) {
           return ListTile(
-              selected: element == _sel,
               onTap: () {
                 setState(() {
-                  _sel = element;
                   _detailPage(context, element);
                 });
               },
@@ -48,11 +45,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               body: SingleChildScrollView(
                 child: Hero(
-                  flightShuttleBuilder: (BuildContext flightContext,
-                  Animation<double> animation,
-                  HeroFlightDirection flightDirection,
-                      BuildContext fromHeroContext,
-                      BuildContext toHeroContext,) {
+                  flightShuttleBuilder: (
+                    BuildContext flightContext,
+                    Animation<double> animation,
+                    HeroFlightDirection flightDirection,
+                    BuildContext fromHeroContext,
+                    BuildContext toHeroContext,
+                  ) {
                     return SingleChildScrollView(
                       child: fromHeroContext.widget,
                     );
@@ -67,7 +66,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           image: AssetImage(list[element].photo),
                         ),
                       ),
-
                       Text(
                         list[element].name,
                         style: Theme.of(context).textTheme.headline5,
